@@ -16,5 +16,10 @@ apt-get wget -y
 wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
 
 echo "Extracting the application to apache default folder"
-cd linux-site-dio
+cd linux-site-dio-main
 cp -r * /var/www/html
+
+echo "Restarting apache service"
+systemctl restart apache2
+
+echo "Script has finished apache instalation and application copy!"
