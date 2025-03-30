@@ -16,6 +16,7 @@ apt-get wget -y
 wget https://github.com/denilsonbonatti/linux-site-dio/archive/refs/heads/main.zip
 
 echo "Extracting the application to apache default folder"
+unzip main.zip
 cd linux-site-dio-main
 cp -r * /var/www/html
 
